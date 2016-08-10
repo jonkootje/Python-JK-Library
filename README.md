@@ -23,37 +23,37 @@
 ####How to use database:
 --------------
 First you need to **initialize** the database, you do this by defining the database's name to use.
-'''
+```
 db = JK.database('users')
-'''
+```
 
 Now the library gives you the ability to **get** the information from the database and **push** the information to the database.
 
 You **get** information by doing this.
-'''
+```
 information = db.get()
 print(information) # To display the information
-'''
+```
 
 You **push** information by doing this.
-'''
+```
 data = {"users":[{"username":"john","age":41,"email":"johnthelegend@legend.com"}, {"username":"mark","age":21,"email":"mark@coldmail.com"}} # Some example data
 db.push(data)
-'''
+```
 
 You can also **switch** from database by **setting** a different one.
-'''
+```
 db.set('emaillist')
-'''
+```
 
 You can also **create** a new database by doing this.
-'''
+```
 db.create('somedatabase')
-'''
+```
 
 For some **checking** stuff in your coding you can also check if database **exists**.
-'''
+```
 db.exist('somedatabase') # This will return True or False
-'''
+```
 
 
